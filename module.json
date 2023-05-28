@@ -1,10 +1,10 @@
 {
   "name": "storyteller-addon-singlesheet",
   "title": "Storyteller addon singlesheet",
-  "description": "",
+  "description": "This addon module for StoryTeller adds a collection of single page journal entry styles.",
   "authors": [
-    "Xbozon",
-    "Benjaneer"
+    "Benjaneer",
+    "Xbozon"
   ],
   "version": "1.0.0",
   "compatibility": {
