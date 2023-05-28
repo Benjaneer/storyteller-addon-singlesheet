@@ -12,6 +12,19 @@
     "verified": "10.284",
     "maximum": "10"
   },
+  "relationships": {
+    "systems": [],
+    "requires": [
+      {
+        "id": "storyteller",
+        "type": "module",
+        "manifest": "https://raw.githubusercontent.com/Xbozon/storyteller/main/module.json",
+        "compatibility": {
+          "verified": "1.1.0"
+        }
+      }
+    ]
+  },
   "styles": [
     "css/storyteller-addon-singlesheet.css"
   ],
