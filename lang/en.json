@@ -1,5 +1,5 @@
 {
-  "I18N.MAINTAINERS": ["Xbozon"],
+  "I18N.MAINTAINERS": ["Benjaneer"],
 
-  "STORYTELLER_ADDON_EXAMPLE.ExampleEntry": "Example sheet"
+  "STORYTELLER_ADDON_SINGLE.SingleEntry": "Single sheet"
 }
