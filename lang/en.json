@@ -1,5 +1,7 @@
 {
   "I18N.MAINTAINERS": ["Benjaneer"],
 
-  "STORYTELLER_ADDON_SINGLE.SingleEntry": "Single sheet"
+  "STORYTELLER_ADDON_SINGLE.SingleSheet": "Single sheet (clean)",
+  "STORYTELLER_ADDON_SINGLE.SingleSheetWorn": "Single sheet (worn)",
+  "STORYTELLER_ADDON_SINGLE.SingleSheetRagged": "Single sheet (ragged)"
 }
