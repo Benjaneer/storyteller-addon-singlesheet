@@ -1,0 +1,20 @@
+
+.window-app.sheet.journal-sheet.journal-entry-page {
+    background: url(../img/editor.webp);
+    background-size: 100% 100%;
+    border: none;
+}
+
+.window-app.sheet.journal-sheet.journal-entry-page .window-header {
+    background: none;
+}
+
+.window-app.sheet.journal-sheet.journal-entry-page .window-content {
+    background: none;
+}
+
+.window-app.sheet.journal-sheet.journal-entry-page .window-header {
+    background: url(../img/header.webp);
+    background-size: 100% 100%;
+    border: none;
+}

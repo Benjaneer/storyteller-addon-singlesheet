@@ -1,0 +1,102 @@
+.single-sheet .page-num.num-start h1,
+.single-sheet .page-num.num-start .pages-list>ol {
+    font-family: 'Kurale', serif;
+/*    font-size: 1.4vh;*/
+    font-size: 1.5vh;
+    font-weight: 600;
+    opacity: 0.9;
+    color: #48392e;
+    height: 100%;
+}
+
+/* form */
+.single-sheet .page-num.num-start .journal-header{
+    width: 100%;
+    height: auto;
+}
+
+/* input */
+.single-sheet .page-num.num-start .journal-header .title{
+    display: block;
+    width: 100%;
+    height: auto;
+    padding: 5px;
+    box-sizing: border-box;
+    white-space: normal;
+    overflow-wrap: break-word;
+}
+
+.single-sheet .page-num.num-start .pages-list>ol>li .page-title{
+    cursor: pointer;
+}
+
+.single-sheet .page-num.num-start .pages-list>ol>li:hover .page-title{
+    text-shadow: 0 0 8px var(--color-shadow-primary);
+}
+
+.single-sheet .page-num.num-start .pages-list>ol {
+/*    font-size: 2.4vh;*/
+    font-size: 1.5vh;
+    list-style: none;
+    counter-reset: my-counter;
+}
+
+.single-sheet .page-num.num-start .pages-list>ol>li {
+    counter-increment: my-counter;
+    width: 100%;
+}
+
+.single-sheet .page-num.num-start .pages-list>ol .level2 .page-heading {
+    margin-left: 10px;
+}
+
+.single-sheet .page-num.num-start .pages-list>ol .level3 .page-heading {
+    display: none;
+}
+
+.single-sheet .page-num.num-start .pages-list>ol>li .page-heading{
+    text-align: left;
+    width: 95%;
+    display: inline-block;
+}
+
+.single-sheet .page-num.num-start .pages-list>ol>li .page-heading::before {
+    text-align: right;
+    content: counter(my-counter);
+    display: inline-block;
+    width: 1em; /* Adjust this as needed */
+    position: absolute;
+    right: 0;
+}
+
+.single-sheet .page-num.num-start .pages-list .headings {
+    display: none;
+}
+
+.single-sheet .journal-entry-page.num-start.editor-edit {
+    padding: 1.34% 4.34% 0.34% 4.34%;
+}
+
+.single-sheet .page-num.num-start .journal-entry-page.pages-content {
+    width: 100%;
+    padding: 6%;
+}
+
+.single-sheet .page-num.num-start input{
+    font-family: 'Kurale', serif;
+    opacity: 0.9;
+    color: #48392e;
+    text-align: center;
+    height: 2.5em;
+    font-weight: 600;
+    font-size: 2.5em;
+}
+
+.single-sheet .page-num.num-start .create{
+    background: rgba(0, 0, 0, 0.05);
+    border: 1px solid var(--color-border-light-tertiary);
+}
+
+.single-sheet .journal-entry-page.num-start.editor-edit {
+    padding: 1.34% 4.34% 0.34% 4.34%;
+}

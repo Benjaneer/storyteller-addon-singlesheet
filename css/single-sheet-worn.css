@@ -1,0 +1,27 @@
+
+.single-sheet.worn .page-num {
+    background-image: url(../img/worn.webp);
+    background-size: 100% 100%;
+    direction: ltr;
+}
+
+.single-sheet.worn .story-settings {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}
+
+.single-sheet.worn .page-num .journal-entry-page {
+    -webkit-mask-image: url(../img/worn_mask.webp);
+    -webkit-mask-size: 100% 100%;
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+}
+
+.single-sheet.worn .journal-entry-page.image figure img {
+    -webkit-mask-image: none;
+}
+
+.single-sheet.worn .journal-entry-page.image figure img {
+    pointer-events: none;
+}

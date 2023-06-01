@@ -1,0 +1,27 @@
+
+.single-sheet.ragged .page-num {
+    background-image: url(../img/ragged.webp);
+    background-size: 100% 100%;
+    direction: ltr;
+}
+
+.single-sheet.ragged .story-settings {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}
+
+.single-sheet.ragged .page-num .journal-entry-page {
+    -webkit-mask-image: url(../img/ragged_mask.webp);
+    -webkit-mask-size: 100% 100%;
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+}
+
+.single-sheet.ragged .journal-entry-page.image figure img {
+    -webkit-mask-image: none;
+}
+
+.single-sheet.ragged .journal-entry-page.image figure img {
+    pointer-events: none;
+}

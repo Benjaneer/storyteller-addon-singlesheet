@@ -1,0 +1,30 @@
+.page.left > .page-inner ::-webkit-scrollbar-thumb,
+.single-sheet .page::-webkit-scrollbar-thumb,
+.single-sheet .page-num::-webkit-scrollbar-thumb {
+    outline: 1px;
+    border-radius: 5px;
+    border: 1px;
+/*    background: #74645526;*/
+}
+
+.page.left > .page-inner ::-webkit-scrollbar-track,
+.single-sheet .page::-webkit-scrollbar-track,
+.single-sheet .page-num::-webkit-scrollbar-corner,
+.single-sheet .page-num::-webkit-scrollbar-button,
+.single-sheet .page-num::-webkit-scrollbar-track {
+    background: transparent !important;
+}
+
+/*.single-sheet div.page-num:has(>article.journal-entry-page.image) {
+    height: 100%;
+    width: 100%;
+    margin: 0% 0% 0% 0%;
+    padding: 0% 0% 0% 0%;
+    overflow: hidden;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.single-sheet div.page-num:has(>article.journal-entry-page.image)::-webkit-scrollbar {
+  display: none;
+}*/
