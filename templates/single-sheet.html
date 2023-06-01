@@ -1,16 +1,21 @@
 <div class="journal-sheet-container {{cssClass}}">
-
     <div class="journal-entry-pages">
+        <div style="display:none;">
+            <ol class="pagelookup">
+                {{#each toc as |page|}}
+                <li data-page-id="{{page._id}}" page="{{offset @index}}" />
+                {{/each}}
+            </ol>
+        </div>
         <div id="story-{{data._id}}" class="scrollable pages">
+            {{#if editable}}
             <div class="page-num num-start">
                 <div class="journal-entry-page pages-content">
                     <div class="content-inner">
-
                         <form class="journal-header">
                             <input class="title" name="name" type="text" value="{{document.name}}"
                                    placeholder="{{localize " JOURNAL.EntryTitle"}}"/>
                         </form>
-
                         {{! Sidebar Pages Navigation }}
                         <nav class="pages-list" aria-label="{{localize 'JOURNAL.NavLabel'}}"
                              data-tooltip-direction="RIGHT">
@@ -27,24 +32,23 @@
                                 {{/each}}
                             </ol>
                         </nav>
-                        {{#if editable}}
                         <button class="create" type="button" data-action="createPage">
                             <i class="fa-solid fa-file-circle-plus"></i> {{localize "JOURNAL.AddPage"}}
                         </button>
-                        {{/if}}
                     </div>
                 </div>
             </div>
+            {{/if}}
             {{#each toc as |page|}}
-            <div class="page-num {{page.number}}">
-                <article class="journal-entry-page {{page.type}}" data-page-id="{{page._id}}">
-                    {{#if page.editable}}
-                    <div class="edit-container">
-                        <a class="editor-edit"><i class="fas fa-edit"></i></a>
-                    </div>
-                    {{/if}}
-                </article>
-            </div>
+                <div class="page-num {{page.number}}">
+                    <article class="journal-entry-page {{page.type}}" data-page-id="{{page._id}}">
+                        {{#if page.editable}}
+                        <div class="edit-container">
+                            <a class="editor-edit"><i class="fas fa-edit"></i></a>
+                        </div>
+                        {{/if}}
+                    </article>
+                </div>
             {{/each}}
         </div>
     </div>
