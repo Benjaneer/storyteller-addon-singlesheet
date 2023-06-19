@@ -6,7 +6,7 @@
   "authors": [
     "Benjaneer"
   ],
-  "version": "1.0.0",
+  "version": "1.1.0",
   "compatibility": {
     "minimum": "10",
     "maximum": "10"
@@ -41,5 +41,5 @@
   "packs": [],
   "url": "https://github.com/Benjaneer/storyteller-addon-singlesheet",
   "manifest": "https://raw.githubusercontent.com/Benjaneer/storyteller-addon-singlesheet/main/module.json",
-  "download": "https://github.com/Benjaneer/storyteller-addon-singlesheet/archive/refs/tags/v1.0.0.zip"
+  "download": "https://github.com/Benjaneer/storyteller-addon-singlesheet/archive/refs/tags/v1.1.0.zip"
 }
