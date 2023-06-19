@@ -1,0 +1,11 @@
+.single-sheet.clean .journal-entry-page.image.dontopen figure img {
+    pointer-events: none;
+}
+
+.single-sheet.worn .journal-entry-page.image.dontopen figure img {
+    pointer-events: none;
+}
+
+.single-sheet.ragged .journal-entry-page.image.dontopen figure img {
+    pointer-events: none;
+}

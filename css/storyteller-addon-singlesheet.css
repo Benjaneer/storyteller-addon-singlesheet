@@ -3,6 +3,7 @@
 @import "editor.css";
 @import "storyteller-addon-toc.css";
 @import "storyteller-addon-scrollbar.css";
+@import "storyteller-addon-disableimageopen.css";
 @import "single-sheet-clean.css";
 @import "single-sheet-worn.css";
 @import "single-sheet-ragged.css";
@@ -120,4 +121,5 @@ nav.storyteller-nav.tabs {
     max-height: 100%;
     object-fit: contain;
     position: center;
+    -webkit-mask-image: none;
 }

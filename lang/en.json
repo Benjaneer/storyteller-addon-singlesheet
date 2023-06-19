@@ -3,5 +3,10 @@
 
   "STORYTELLER_ADDON_SINGLE.SingleSheet": "Single sheet (clean)",
   "STORYTELLER_ADDON_SINGLE.SingleSheetWorn": "Single sheet (worn)",
-  "STORYTELLER_ADDON_SINGLE.SingleSheetRagged": "Single sheet (ragged)"
+  "STORYTELLER_ADDON_SINGLE.SingleSheetRagged": "Single sheet (ragged)",
+
+  "STORYTELLER_ADDON_SINGLE.Settings.DontOpenImages": "Don't open images on click",
+  "STORYTELLER_ADDON_SINGLE.Settings.DontOpenImagesHint": "Check to prevent single sheet images from opening on user click. Default: true",
+  "STORYTELLER_ADDON_SINGLE.Settings.ImageBackground": "Image Background",
+  "STORYTELLER_ADDON_SINGLE.Settings.ImageBackgroundHint": "Should image pages in singlesheets have a page background (uncheck to remove page background). Note that other pages in the stack (pages of the same journal entry) may be seen behind if the image is not the only page of the journal."
 }

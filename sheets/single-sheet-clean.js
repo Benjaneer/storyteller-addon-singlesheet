@@ -3,14 +3,14 @@ const bookWidth = 695
 const bookHeight = 937
 
 /* I recommend inheriting from the StorySheet class, but if you know what you're doing, you can use anything. */
-export class SingleSheetRagged extends JournalSheet {
+export class SingleSheet extends JournalSheet {
     pageFlip = "modules/storyteller/sounds/paper-flip.mp3"
 
     static get defaultOptions() {
         return foundry.utils.mergeObject(super.defaultOptions, {
             baseApplication: 'JournalSheet',
             /* One of the most important lines, here you can add classes that will apply to the entire Journal window. */
-            classes: ["sheet", "single-sheet", "ragged", "storyteller-addon-singlesheet"],
+            classes: ["sheet", "single-sheet", "clean", "storyteller-addon-singlesheet"],
             /* This file contains the html markup code, in case you need a more complex design style. For example, without page turning. */
             template: 'modules/storyteller-addon-singlesheet/templates/single-sheet.html',
             width: getBookWidth(),

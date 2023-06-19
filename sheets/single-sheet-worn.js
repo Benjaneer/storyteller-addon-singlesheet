@@ -50,16 +50,51 @@ export class SingleSheetWorn extends JournalSheet {
                 }
             }
         });
+
         if (options.pageId != undefined) {
             this.goToPage(options.pageId);
         };
+    }
+
+    styleImage(storyId) {
         let images = document.querySelectorAll('.single-sheet .page-num .journal-entry-page.image');
         if(images.length > 0) {
             images.forEach((image) => {
                 let pageClass=image.parentElement.className;
-                document.getElementsByClassName(pageClass)[0].style.overflow='hidden';
+                let pageQuery = storyId + ' .' + pageClass.replaceAll(' ','.');
+                $(pageQuery).css("overflow", "hidden");
+                if(!game.settings.get('storyteller-addon-singlesheet', 'background')) {
+                    $(pageQuery).css("background-image", "none");
+                    $(pageQuery + ' .journal-entry-page').css("-webkit-mask-image", "url(./modules/storyteller-addon-singlesheet/img/clean_mask.webp)");
+                };
             });
         };
+    }
+
+    /**
+     * Update child views inside the main sheet.
+     * @returns {Promise<void>}
+     * @protected
+     */
+    async _renderPageViews() {
+        for ( const pageNode of this.element[0].querySelectorAll(".journal-entry-page") ) {
+            const id = pageNode.dataset.pageId;
+            if ( !id ) continue;
+            const edit = pageNode.querySelector(":scope > .edit-container");
+            const sheet = this.getPageSheet(id);
+            const data = await sheet.getData();
+            const view = await sheet._renderInner(data);
+            pageNode.replaceChildren(...view.get());
+            if ( edit ) pageNode.appendChild(edit);
+            sheet._activateCoreListeners(view.parent());
+            sheet.activateListeners(view);
+            await this._renderHeadings(pageNode, sheet.toc);
+            for ( const cls of sheet.constructor._getInheritanceChain() ) {
+                Hooks.callAll(`render${cls.name}`, sheet, view, data);
+            }
+        }
+        
+        this.styleImage('#' + this.element[0].querySelectorAll(".scrollable.pages")[0].id);
     }
 
     /** @inheritdoc */

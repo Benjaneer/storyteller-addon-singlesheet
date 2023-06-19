@@ -1,6 +1,18 @@
-import {SingleSheet} from "./sheets/single-sheet.js";
+import {SingleSheet} from "./sheets/single-sheet-clean.js";
 import {SingleSheetWorn} from "./sheets/single-sheet-worn.js";
 import {SingleSheetRagged} from "./sheets/single-sheet-ragged.js";
+
+Hooks.on("init", () => {
+    registerSettings()
+//    game.StoryTeller = new StoryTeller()
+//    game.StoryTeller.init()
+
+//    console.log("Storyteller | Init");
+
+//    if (game.settings.get('storyteller-addon-singlesheet', 'dontOpen')) {
+//        disableImageOpen() //storyteller-addon-disableimageopen.css
+//    }
+});
 
 Hooks.on("ready", () => {
     /* Use this method at hook "ready" to register your journal style. */
@@ -33,6 +45,27 @@ Hooks.on("ready", () => {
     console.log("Storyteller addon singlesheet | Ready")
 });
 
+function registerSettings() {
+//https://foundryvtt.com/api/v10/classes/client.ClientSettings.html#register
+    game.settings.register('storyteller-addon-singlesheet', 'background', {
+        name: game.i18n.localize('STORYTELLER_ADDON_SINGLE.Settings.ImageBackground'),
+        hint: game.i18n.localize('STORYTELLER_ADDON_SINGLE.Settings.ImageBackgroundHint'),
+        scope: "world",
+        type: Boolean,
+        default: true,
+        config: true
+    });
+
+    game.settings.register('storyteller-addon-singlesheet', 'dontOpen', {
+        name: game.i18n.localize('STORYTELLER_ADDON_SINGLE.Settings.DontOpenImages'),
+        hint: game.i18n.localize('STORYTELLER_ADDON_SINGLE.Settings.DontOpenImagesHint'),
+        scope: "world",
+        type: Boolean,
+        default: true,
+        config: true
+    });
+}
+
 Handlebars.registerHelper("offset", function(value)
 {
     return parseInt(value) + 1;
@@ -40,4 +73,12 @@ Handlebars.registerHelper("offset", function(value)
 
 Handlebars.registerHelper('getIdByIndex', function(array, index) {
     return array[index].id;
+});
+
+Handlebars.registerHelper('getDontOpen', function() {
+    let addClass = "";
+    if (game.settings.get('storyteller-addon-singlesheet', 'dontOpen')) {
+        addClass = "dontopen";
+    }
+    return addClass;
 });

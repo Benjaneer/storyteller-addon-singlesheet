@@ -17,11 +17,3 @@
     -webkit-mask-repeat: no-repeat;
     -webkit-mask-position: center;
 }
-
-.single-sheet.clean .journal-entry-page.image figure img {
-    -webkit-mask-image: none;
-}
-
-.single-sheet.worn .journal-entry-page.image figure img {
-    pointer-events: none;
-}

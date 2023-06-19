@@ -41,7 +41,7 @@
             {{/if}}
             {{#each toc as |page|}}
                 <div class="page-num {{page.number}}">
-                    <article class="journal-entry-page {{page.type}}" data-page-id="{{page._id}}">
+                    <article class="journal-entry-page {{page.type}} {{getDontOpen}}" data-page-id="{{page._id}}">
                         {{#if page.editable}}
                         <div class="edit-container">
                             <a class="editor-edit"><i class="fas fa-edit"></i></a>
