@@ -11,6 +11,6 @@ Note: the Table of Contents is only loaded for the journal owner(s)
 
 In Work (not released yet):
 
-The "custom image" singlesheet style will take the first image page from the journal entry and use it as the background with all other pages as a single scrollable multisheet (if no image pages are found it defaults to "clean" singlesheet background.
+The "custom image" singlesheet style will take the first image page from the journal entry (hide that page) and use it as the background with all other pages as a single scrollable multisheet (if no image pages are found it defaults to "clean" singlesheet background.
 
 ![image](https://github.com/Benjaneer/storyteller-addon-singlesheet/assets/9536408/b5d1b1e1-3c3a-4719-b2cb-59423e00aa4e)
