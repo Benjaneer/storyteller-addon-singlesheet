@@ -8,3 +8,6 @@ Note: the Table of Contents is only loaded for the journal owner(s)
 ![image](https://github.com/Benjaneer/storyteller-addon-singlesheet/assets/9536408/01ad000d-cc09-44ae-8d2e-8b27d3ad8955)
 
 ![image](https://github.com/Benjaneer/storyteller-addon-singlesheet/assets/9536408/8c9f512f-043b-40ac-9102-fcbe1c899a5b)
+
+In Work (not released yet):
+![image](https://github.com/Benjaneer/storyteller-addon-singlesheet/assets/9536408/b5d1b1e1-3c3a-4719-b2cb-59423e00aa4e)
