@@ -11,6 +11,11 @@ Note: the Table of Contents is only loaded for the journal owner(s)
 
 In Work (not released yet):
 
+"Pristine" style is like clean but without the rough edges.
+
+![image](https://github.com/Benjaneer/storyteller-addon-singlesheet/assets/9536408/be37534f-1936-4833-a0d1-6d37ce1872f2)
+
+
 The "custom image" singlesheet style will take the first image page from the journal entry (hide that page) and use it as the background with all other pages as a single scrollable multisheet (if no image pages are found it defaults to "pristine" singlesheet background.
 
 ![image](https://github.com/Benjaneer/storyteller-addon-singlesheet/assets/9536408/dad776bb-5767-496e-b599-896462fd1674)
