@@ -1,4 +1,4 @@
-# An Addon for Storyteller
+![image](https://github.com/Benjaneer/storyteller-addon-singlesheet/assets/9536408/666b401b-ec8c-4dff-87fb-b2dfec1e1483)# An Addon for Storyteller
 This addon for the StoryTeller module adds three single page journal styles, and adds a page style background to the editor.
 Note: the Table of Contents is only loaded for the journal owner(s)
 
@@ -11,12 +11,12 @@ Note: the Table of Contents is only loaded for the journal owner(s)
 
 In Work (not released yet):
 
-The "custom image" singlesheet style will take the first image page from the journal entry (hide that page) and use it as the background with all other pages as a single scrollable multisheet (if no image pages are found it defaults to "clean" singlesheet background.
+The "custom image" singlesheet style will take the first image page from the journal entry (hide that page) and use it as the background with all other pages as a single scrollable multisheet (if no image pages are found it defaults to "pristine" singlesheet background.
 
-![image](https://github.com/Benjaneer/storyteller-addon-singlesheet/assets/9536408/b5d1b1e1-3c3a-4719-b2cb-59423e00aa4e)
+![image](https://github.com/Benjaneer/storyteller-addon-singlesheet/assets/9536408/dad776bb-5767-496e-b599-896462fd1674)
+
 
 The "Scroll (vertical)" template is also a single scrollable multisheet, but in the style of a scroll, rolling up and down.
 Images shrink to fit-width and auto-scale height (maintaining aspect ratio of the origional image).
-Known-issue: the scrollbar is invisible, but does function, 1) making it hard to find, and 2) may cause confusion if clicked on accident.
 
-![image](https://github.com/Benjaneer/storyteller-addon-singlesheet/assets/9536408/28cd9657-8b31-4837-9fdd-94bbef298e45)
+![image](https://github.com/Benjaneer/storyteller-addon-singlesheet/assets/9536408/385ea30b-8996-4e51-ac27-dbd5d39e8736)
