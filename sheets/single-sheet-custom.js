@@ -3,16 +3,16 @@ const bookWidth = 695
 const bookHeight = 937
 
 /* I recommend inheriting from the StorySheet class, but if you know what you're doing, you can use anything. */
-export class SingleSheetWorn extends JournalSheet {
+export class SingleSheetCustom extends JournalSheet {
     pageFlip = "modules/storyteller/sounds/paper-flip.mp3"
 
     static get defaultOptions() {
         return foundry.utils.mergeObject(super.defaultOptions, {
             baseApplication: 'JournalSheet',
             /* One of the most important lines, here you can add classes that will apply to the entire Journal window. */
-            classes: ["sheet", "single-sheet", "worn", "storyteller-addon-singlesheet"],
+            classes: ["sheet", "single-sheet", "custom", "storyteller-addon-singlesheet"],
             /* This file contains the html markup code, in case you need a more complex design style. For example, without page turning. */
-            template: 'modules/storyteller-addon-singlesheet/templates/single-sheet.html',
+            template: 'modules/storyteller-addon-singlesheet/templates/single-sheet-multipage.html',
             width: getBookWidth(),
             height: getBookHeight(),
             resizable: false,
@@ -36,23 +36,8 @@ export class SingleSheetWorn extends JournalSheet {
         let startPage = 1
         let savedPage = getPage(data._id)
 
-        $('#story-' + data._id).turn({
-            duration: 500,
-            page: savedPage >= 1 ? savedPage : startPage,
-            acceleration: true,
-            display: 'single',
-            // autoCenter: true,
-            turnCorners: "bl,br",
-            elevation: 300,
-            when: {
-                turned: function (e, page) {
-                    setPage(data._id, page)
-                }
-            }
-        });
-
         if (options.pageId != undefined) {
-            this.goToPage(options.pageId);
+            this.goToPage(options.pageId, options.anchor);
         };
     }
 
@@ -68,6 +53,11 @@ export class SingleSheetWorn extends JournalSheet {
                     $(pageQuery + ' .journal-entry-page').css("-webkit-mask-image", "url(./modules/storyteller-addon-singlesheet/img/clean_mask.webp)");
                 };
             });
+            let image = images[0];
+            let img = image.getElementsByTagName('img')[0];
+            let newBak = img.getAttribute("src");
+            $(storyId).css("background-image", "url('" + newBak + "')");
+            image.parentElement.style.display = "none";
         };
     }
 
@@ -169,15 +159,6 @@ export class SingleSheetWorn extends JournalSheet {
                 resolve();
             });
         });
-    }
-
-    goToPage(pageId) {
-        let targetPage = document.querySelector('.pagelookup li[data-page-id="' + pageId + '"]');
-        let targetPageNum = Number(targetPage.getAttribute("page"));
-        let pageList = targetPage.closest(".journal-entry-pages").children[1];
-        let journalId = pageList.getAttribute("id").split('-')[1];
-        let curentPageNum = $('#story-' + journalId).turn("page");
-        $('#story-' + journalId).turn("page", targetPageNum+1);
     }
 }
 

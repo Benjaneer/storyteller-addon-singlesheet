@@ -1,0 +1,67 @@
+/*scrollable pages
+.single-sheet.scrollH .page-num {
+    background-image: url(../img/clean.webp);
+    background-size: 100% 100%;
+    direction: ltr;
+}
+*/
+.single-sheet.scrollH .journal-sheet-container {
+    background-image: url(../img/scroll_horizontal.webp);
+    background-size: 100% 100%;
+}
+
+.single-sheet.scrollH .story-settings {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}
+
+.single-sheet.scrollH .journal-entry-pages {
+    -webkit-mask-image: url(../img/scroll_mask-H.webp);
+    -webkit-mask-size: 100% 100%;
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+.single-sheet.scrollH .scroll-bottom {
+    padding: 0% 10% 0% 10% !important;
+    height: 100%;
+}
+
+.single-sheet.scrollH .scrollable.pages {
+    padding: 0% 7% 0% 6.5% !important;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+}
+
+.single-sheet.scrollH .page-num {
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 100%;
+}
+
+.single-sheet.scrollH .journal-entry-page.text {
+    padding: 3% 1.5% 3.7% 2.5% !important;
+    width: 100%;
+    height: 100%;
+/*    overflow-x: hidden;
+    overflow-y: auto;*/
+}
+
+.single-sheet.scrollH .journal-entry-page.image,
+.single-sheet.scrollH .journal-entry-page.image figure,
+.single-sheet.scrollH .journal-entry-page.image figure div {
+    max-width: none;
+    width: auto;
+    height: 100%;
+}
+
+.single-sheet.scrollH .journal-entry-page.image figure img {
+    padding: 3% 1% 3.5% 1%;
+    max-width: none;
+    width: auto;
+    height: 100%;
+}

@@ -1,9 +1,13 @@
 {
   "I18N.MAINTAINERS": ["Benjaneer"],
 
-  "STORYTELLER_ADDON_SINGLE.SingleSheet": "Single sheet (clean)",
+  "STORYTELLER_ADDON_SINGLE.SingleSheetPristine": "Single sheet (pristine)",
+  "STORYTELLER_ADDON_SINGLE.SingleSheetClean": "Single sheet (clean)",
   "STORYTELLER_ADDON_SINGLE.SingleSheetWorn": "Single sheet (worn)",
   "STORYTELLER_ADDON_SINGLE.SingleSheetRagged": "Single sheet (ragged)",
+  "STORYTELLER_ADDON_SINGLE.SingleSheetCustom": "Single sheet (custom image)",
+  "STORYTELLER_ADDON_SINGLE.SingleSheetScrollV": "Scroll (vertical)",
+  "STORYTELLER_ADDON_SINGLE.SingleSheetScrollH": "Scroll (horizontal)",
 
   "STORYTELLER_ADDON_SINGLE.Settings.DontOpenImages": "Don't open images on click",
   "STORYTELLER_ADDON_SINGLE.Settings.DontOpenImagesHint": "Check to prevent single sheet images from opening on user click. Default: true",

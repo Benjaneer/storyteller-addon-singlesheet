@@ -1,0 +1,30 @@
+/*scrollable pages
+.single-sheet.custom .page-num {
+    background-image: url(../img/pristine.webp);
+    background-size: 100% 100%;
+    direction: ltr;
+}
+*/
+.single-sheet.custom .scrollable.pages {
+    background-image: url(../img/pristine.webp);
+    background-size: 100% 100%;
+    direction: ltr;
+}
+
+.single-sheet.custom .story-settings {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}
+
+.single-sheet.custom .scrollable.pages {
+    overflow: scroll;
+    -webkit-mask-image: url(../img/pristine_mask.webp);
+    -webkit-mask-size: 100% 100%;
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+}
+
+.single-sheet.custom .scroll-bottom {
+    display: none;
+}

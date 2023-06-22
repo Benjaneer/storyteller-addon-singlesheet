@@ -1,0 +1,50 @@
+/*scrollable pages
+.single-sheet.scrollV .page-num {
+    background-image: url(../img/clean.webp);
+    background-size: 100% 100%;
+    direction: ltr;
+}
+*/
+.single-sheet.scrollV .journal-sheet-container {
+    background-image: url(../img/scroll_vertical.webp);
+    background-size: 100% 100%;
+}
+
+.single-sheet.scrollV .story-settings {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}
+
+.single-sheet.scrollV .journal-entry-pages {
+    overflow: scroll;
+    -webkit-mask-image: url(../img/scroll_mask-V.webp);
+    -webkit-mask-size: 100% 100%;
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+}
+
+.single-sheet.scrollV .scroll-bottom {
+    padding: 3% 0% 0% 0%;
+    /* t r b l */
+    box-sizing: border-box;
+    width: 100%
+}
+
+.single-sheet.scrollV .scrollable.pages {
+    padding: 9.5% 1.5% 1% 2.5% !important;
+}
+
+.single-sheet.scrollV .journal-entry-page.text {
+    padding: 1% 1.5% 2% 2.5% !important;
+}
+
+.single-sheet.scrollV .journal-entry-page.image,
+.single-sheet.scrollV .journal-entry-page.image figure,
+.single-sheet.scrollV .journal-entry-page.image figure div {
+    height: auto !important;
+}
+
+.single-sheet.scrollV .journal-entry-page.image figure img {
+    padding: 1% 1% 1% 1% !important;
+}

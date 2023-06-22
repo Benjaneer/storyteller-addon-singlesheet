@@ -3,7 +3,7 @@ const bookWidth = 695
 const bookHeight = 937
 
 /* I recommend inheriting from the StorySheet class, but if you know what you're doing, you can use anything. */
-export class SingleSheet extends JournalSheet {
+export class SingleSheetClean extends JournalSheet {
     pageFlip = "modules/storyteller/sounds/paper-flip.mp3"
 
     static get defaultOptions() {
@@ -57,10 +57,10 @@ export class SingleSheet extends JournalSheet {
     }
 
     styleImage(storyId) {
-        let images = document.querySelectorAll('.single-sheet .page-num .journal-entry-page.image');
+        let images = document.querySelectorAll(storyId + ' .page-num .journal-entry-page.image');
         if(images.length > 0) {
             images.forEach((image) => {
-                let pageClass=image.parentElement.className;
+                let pageClass = image.parentElement.className;
                 let pageQuery = storyId + ' .' + pageClass.replaceAll(' ','.');
                 $(pageQuery).css("overflow", "hidden");
                 if(!game.settings.get('storyteller-addon-singlesheet', 'background')) {

@@ -3,10 +3,13 @@
 @import "editor.css";
 @import "storyteller-addon-toc.css";
 @import "storyteller-addon-scrollbar.css";
-@import "storyteller-addon-disableimageopen.css";
+@import "single-sheet-pristine.css";
 @import "single-sheet-clean.css";
 @import "single-sheet-worn.css";
 @import "single-sheet-ragged.css";
+@import "single-sheet-custom.css";
+@import "single-sheet-scroll-V.css";
+@import "single-sheet-scroll-H.css";
 
 /* Styling for the tabs */
 nav.storyteller-nav.tabs {
@@ -94,14 +97,6 @@ nav.storyteller-nav.tabs {
     padding: 1.34% 4.34% 0.34% 4.34%;
 }
 
-.single-sheet .journal-entry-page.image,
-.single-sheet .journal-entry-page.image figure,
-.single-sheet .journal-entry-page.image figure div {
-    height: 100%;
-    width: 100%;
-    margin: 0;
-}
-
 .single-sheet .editor-edit {
     display: block;
     top: 1.3%;
@@ -114,6 +109,14 @@ nav.storyteller-nav.tabs {
     height: 100%;
 }
 
+.single-sheet .journal-entry-page.image,
+.single-sheet .journal-entry-page.image figure,
+.single-sheet .journal-entry-page.image figure div {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
 /*.single-sheet .journal-entry-page.image figure,
 .single-sheet .journal-entry-page.image figure div,*/
 .single-sheet .journal-entry-page.image figure img {
@@ -123,3 +126,8 @@ nav.storyteller-nav.tabs {
     position: center;
     -webkit-mask-image: none;
 }
+
+.single-sheet .journal-entry-page.image.dontopen figure img {
+    pointer-events: none;
+}
+

@@ -57,10 +57,10 @@ export class SingleSheetRagged extends JournalSheet {
     }
 
     styleImage(storyId) {
-        let images = document.querySelectorAll('.single-sheet .page-num .journal-entry-page.image');
+        let images = document.querySelectorAll(storyId + ' .page-num .journal-entry-page.image');
         if(images.length > 0) {
             images.forEach((image) => {
-                let pageClass=image.parentElement.className;
+                let pageClass = image.parentElement.className;
                 let pageQuery = storyId + ' .' + pageClass.replaceAll(' ','.');
                 $(pageQuery).css("overflow", "hidden");
                 if(!game.settings.get('storyteller-addon-singlesheet', 'background')) {
