@@ -19,4 +19,4 @@ The "Scroll (vertical)" template is also a single scrollable multisheet, but in 
 Images shrink to fit-width and auto-scale height (maintaining aspect ratio of the origional image).
 Known-issue: the scrollbar is invisible, but does function, 1) making it hard to find, and 2) may cause confusion if clicked on accident.
 
-![image](https://github.com/Benjaneer/storyteller-addon-singlesheet/assets/9536408/7b0a3739-fa7a-42ae-8096-79a8cea87d4b)
+![image](https://github.com/Benjaneer/storyteller-addon-singlesheet/assets/9536408/28cd9657-8b31-4837-9fdd-94bbef298e45)
