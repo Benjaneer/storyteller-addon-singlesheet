@@ -25,3 +25,7 @@ The "Scroll (vertical)" template is also a single scrollable multisheet, but in 
 Images shrink to fit-width and auto-scale height (maintaining aspect ratio of the origional image).
 
 ![image](https://github.com/Benjaneer/storyteller-addon-singlesheet/assets/9536408/385ea30b-8996-4e51-ac27-dbd5d39e8736)
+
+"Scroll (horizontal)" is book (two page) width. Images will scale to full height and auto width (maintianing aspect ratio of the origional image). Text pages will keep regular page width and will have a vertical scrollbar if their text exceeds the height of the page.
+
+![image](https://github.com/Benjaneer/storyteller-addon-singlesheet/assets/9536408/1e80982a-5feb-44ce-bbf6-dd0f6c46569e)
