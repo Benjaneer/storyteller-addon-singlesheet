@@ -9,8 +9,6 @@ Note: the Table of Contents is only loaded for the journal owner(s)
 
 ![image](https://github.com/Benjaneer/storyteller-addon-singlesheet/assets/9536408/8c9f512f-043b-40ac-9102-fcbe1c899a5b)
 
-In Work (not released yet):
-
 "Pristine" style is like clean but without the rough edges.
 
 ![image](https://github.com/Benjaneer/storyteller-addon-singlesheet/assets/9536408/be37534f-1936-4833-a0d1-6d37ce1872f2)
