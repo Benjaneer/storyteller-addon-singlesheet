@@ -24,6 +24,10 @@
     -webkit-mask-position: center;
 }
 
+.single-sheet.scrollV .page-num {
+    width: 100%;
+}
+
 .single-sheet.scrollV .scroll-bottom {
     padding: 3% 0% 0% 0%;
     /* t r b l */
