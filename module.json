@@ -9,7 +9,7 @@
   "version": "1.2.0",
   "compatibility": {
     "minimum": "10",
-    "maximum": "10"
+    "maximum": "11"
   },
   "relationships": {
     "systems": [],
