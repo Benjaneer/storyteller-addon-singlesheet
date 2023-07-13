@@ -4,12 +4,12 @@
   "title": "Storyteller addon singlesheet",
   "description": "This addon module for StoryTeller adds a collection of single page journal entry styles.",
   "authors": [
-    "Benjaneer"
+    {"name": "Benjaneer"}
   ],
-  "version": "1.2.0",
+  "version": "1.2.2",
   "compatibility": {
     "minimum": "10",
-    "maximum": "11"
+    "verified": "10"
   },
   "relationships": {
     "systems": [],
@@ -41,5 +41,5 @@
   "packs": [],
   "url": "https://github.com/Benjaneer/storyteller-addon-singlesheet",
   "manifest": "https://raw.githubusercontent.com/Benjaneer/storyteller-addon-singlesheet/main/module.json",
-  "download": "https://github.com/Benjaneer/storyteller-addon-singlesheet/archive/refs/tags/v1.2.0.zip"
+  "download": "https://github.com/Benjaneer/storyteller-addon-singlesheet/archive/refs/tags/v1.2.2.zip"
 }
