@@ -51,4 +51,8 @@
 
 .single-sheet.scrollV .journal-entry-page.image figure img {
     padding: 1% 1% 1% 1% !important;
+    -webkit-mask-image: url(../img/scroll_image_mask.webp);
+    -webkit-mask-size: 98% 98%;
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position: center;
 }
