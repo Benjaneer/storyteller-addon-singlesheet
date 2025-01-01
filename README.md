@@ -2,9 +2,11 @@ An Addon for StoryTeller
 (requires you already have the StoryTeller mod)
 This addon for the StoryTeller module adds a variety of single page journal styles, and adds a page style background to the editor.
 Note: the Table of Contents is only loaded for the journal owner(s)
+
 ![list](https://github.com/user-attachments/assets/cc32f876-1361-48a4-be55-47b2ddfe7d6d)
 
 Clean/Worn/Ragged:
+
 ![image](https://github.com/Benjaneer/storyteller-addon-singlesheet/assets/9536408/6bd42d08-ac93-4454-ae5d-eef952392651)
 ![image](https://github.com/Benjaneer/storyteller-addon-singlesheet/assets/9536408/01ad000d-cc09-44ae-8d2e-8b27d3ad8955)
 
