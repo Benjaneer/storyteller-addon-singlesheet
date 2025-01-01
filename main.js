@@ -5,6 +5,10 @@ import {SingleSheetRagged} from "./sheets/single-sheet-ragged.js";
 import {SingleSheetCustom} from "./sheets/single-sheet-custom.js";
 import {SingleSheetScrollV} from "./sheets/single-sheet-scroll-V.js";
 import {SingleSheetScrollH} from "./sheets/single-sheet-scroll-H.js";
+import {SingleSheetSlate} from "./sheets/single-sheet-slate.js";
+import {SingleSheetParchment} from "./sheets/single-sheet-parchment.js";
+import {SingleSheetPaper} from "./sheets/single-sheet-paper.js";
+import {SingleSheetBound} from "./sheets/single-sheet-bound.js";
 
 Hooks.on("init", () => {
     registerSettings()
@@ -57,6 +61,26 @@ Hooks.on("ready", () => {
         key: "scrollhorizontal",
         sheet: SingleSheetScrollH,
         label: "STORYTELLER_ADDON_SINGLE.SingleSheetScrollH"
+    })
+    game.StoryTeller.registerAddonSheet({
+        key: "slate",
+        sheet: SingleSheetSlate,
+        label: "STORYTELLER_ADDON_SINGLE.SingleSheetSlate"
+    })
+    game.StoryTeller.registerAddonSheet({
+        key: "parchment",
+        sheet: SingleSheetParchment,
+        label: "STORYTELLER_ADDON_SINGLE.SingleSheetParchment"
+    })
+    game.StoryTeller.registerAddonSheet({
+        key: "paper",
+        sheet: SingleSheetPaper,
+        label: "STORYTELLER_ADDON_SINGLE.SingleSheetPaper"
+    })
+    game.StoryTeller.registerAddonSheet({
+        key: "bound",
+        sheet: SingleSheetBound,
+        label: "STORYTELLER_ADDON_SINGLE.SingleSheetBound"
     })
     console.log("Storyteller addon singlesheet | Ready")
 });

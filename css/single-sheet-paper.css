@@ -1,17 +1,18 @@
-.single-sheet.pristine .p-temporal,
-.single-sheet.pristine .page-num {
-    background-image: url(../img/pristine.webp);
+.single-sheet.paper .p-temporal,
+.single-sheet.paper .page-num {
+    background-image: url(../img/paper.jpg);
     background-size: 100% 100%;
     direction: ltr;
+    background-repeat: repeat;
 }
 
-.single-sheet.pristine .story-settings {
+.single-sheet.paper .story-settings {
     position: absolute;
     top: 50px;
     left: 50px;
 }
 
-.single-sheet.pristine .page-num .journal-entry-page {
+.single-sheet.paper .page-num .journal-entry-page {
     -webkit-mask-image: url(../img/pristine_mask.webp);
     -webkit-mask-size: 100% 100%;
     -webkit-mask-repeat: no-repeat;

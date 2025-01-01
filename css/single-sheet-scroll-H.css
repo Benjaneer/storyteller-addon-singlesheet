@@ -21,26 +21,31 @@
     -webkit-mask-size: 100% 100%;
     -webkit-mask-repeat: no-repeat;
     -webkit-mask-position: center;
-    overflow-x: scroll;
+    /*overflow-x: scroll;*/
     overflow-y: hidden;
+    padding: 0% 7% 0% 7% !important;
 }
 
 .single-sheet.scrollH .scroll-bottom {
-    padding: 0% 10% 0% 10% !important;
-    height: 100%;
+    /*padding: 0% 10% 0% 10% !important;
+    height: 100%;*/
+    display: none;
 }
 
 .single-sheet.scrollH .scrollable.pages {
-    padding: 0% 7% 0% 6.5% !important;
+    /*padding: 0% 7% 0% 7% !important;*/
     flex-direction: column;
-    width: 50%;
+    width: inherit;
     height: 100%;
+    overflow-x: scroll;
 }
 
 .single-sheet.scrollH .page-num {
-    overflow-x: hidden;
+    /*overflow-x: hidden;
     overflow-y: auto;
+    width: fit-content;*/
     height: 100%;
+    display: contents;
 }
 
 .single-sheet.scrollH .journal-entry-page.text {
@@ -54,19 +59,21 @@
 .single-sheet.scrollH .journal-entry-page.image,
 .single-sheet.scrollH .journal-entry-page.image figure,
 .single-sheet.scrollH .journal-entry-page.image figure div {
-    max-width: none;
-    width: auto;
+    /*max-width: none;
+    width: fit-content;*/
     height: 100%;
+    display: contents;
 }
 
 .single-sheet.scrollH .journal-entry-page.image figure img {
-    padding: 2% 1% 2% 1%;
+    /*padding: 4% 2% 4% 2%;*/
     /* t r b l */
     max-width: none;
     width: auto;
     height: 100%;
     -webkit-mask-image: url(../img/scroll_image_mask.webp);
-    -webkit-mask-size: 98% 95%;
+    -webkit-mask-size: 99% 99%;
     -webkit-mask-repeat: no-repeat;
     -webkit-mask-position: center;
+    display: flex;
 }

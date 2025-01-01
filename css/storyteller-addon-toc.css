@@ -47,34 +47,38 @@
 }
 
 .single-sheet .page-num.num-start .pages-list>ol .level2 .page-heading {
-    margin-left: 10px;
+    margin-left: 20px;
+    text-indent: -10px;
 }
 
-.single-sheet .page-num.num-start .pages-list>ol .level3 .page-heading {
+.single-sheet .page-num.num-start.owner .pages-list>ol .level3 .page-heading {
+    margin-left: 40px;
+    text-indent: -10px;
+}
+
+.single-sheet .page-num.num-start.ro .pages-list>ol .level3 .page-heading {
     display: none;
 }
 
-.single-sheet .page-num.num-start .pages-list>ol>li .page-heading{
+.single-sheet .page-num.num-start .pages-list>ol>li .page-heading {
     text-align: left;
     width: 95%;
     display: inline-block;
 }
 
-.single-sheet .page-num.num-start .pages-list>ol>li .page-heading::before {
+.single-sheet .page-num.num-start .pages-list>ol>li .page-heading::after {
+    font-family: 'Courier', monospace;
+    font-size: 1.4vh;
     text-align: right;
     content: counter(my-counter);
     display: inline-block;
-    width: 1em; /* Adjust this as needed */
+    width: 5em; /* Adjust this as needed */
     position: absolute;
-    right: 0;
+    right: 3em;
 }
 
 .single-sheet .page-num.num-start .pages-list .headings {
     display: none;
-}
-
-.single-sheet .journal-entry-page.num-start.editor-edit {
-    padding: 1.34% 4.34% 0.34% 4.34%;
 }
 
 .single-sheet .page-num.num-start .journal-entry-page.pages-content {

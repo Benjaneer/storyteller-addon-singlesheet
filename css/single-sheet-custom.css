@@ -5,6 +5,7 @@
     direction: ltr;
 }
 */
+.single-sheet.custom .p-temporal,
 .single-sheet.custom .scrollable.pages {
     background-image: url(../img/pristine.webp);
     background-size: 100% 100%;

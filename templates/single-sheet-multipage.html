@@ -16,7 +16,7 @@
                                 {{#each toc as |page|}}
                                 <li class="directory-item {{page.cssClass}}" data-page-id="{{page._id}}">
                                     <div class="page-heading">
-                                        <span class="page-title">{{page.name}}</span>
+                                        <span class="page-title">{{{page.name}}}</span>
                                         {{#if page.icon}}
                                         <span class="page-ownership {{page.ownershipCls}}"><i class="{{page.icon}}"></i></span>
                                         {{/if}}

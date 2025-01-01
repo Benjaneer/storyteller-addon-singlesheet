@@ -8,6 +8,10 @@
   "STORYTELLER_ADDON_SINGLE.SingleSheetCustom": "Single sheet (custom image)",
   "STORYTELLER_ADDON_SINGLE.SingleSheetScrollV": "Scroll (vertical)",
   "STORYTELLER_ADDON_SINGLE.SingleSheetScrollH": "Scroll (horizontal)",
+  "STORYTELLER_ADDON_SINGLE.SingleSheetSlate": "Single sheet (slate)",
+  "STORYTELLER_ADDON_SINGLE.SingleSheetParchment": "Single sheet (parchment)",
+  "STORYTELLER_ADDON_SINGLE.SingleSheetPaper": "Single sheet (paper)",
+  "STORYTELLER_ADDON_SINGLE.SingleSheetBound": "Single sheet (bound)",
 
   "STORYTELLER_ADDON_SINGLE.Settings.DontOpenImages": "Don't open images on click",
   "STORYTELLER_ADDON_SINGLE.Settings.DontOpenImagesHint": "Check to prevent single sheet images from opening on user click. Default: true",
