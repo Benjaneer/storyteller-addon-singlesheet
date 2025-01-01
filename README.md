@@ -4,13 +4,11 @@ This addon for the StoryTeller module adds a variety of single page journal styl
 Note: the Table of Contents is only loaded for the journal owner(s)
 ![list](https://github.com/user-attachments/assets/cc32f876-1361-48a4-be55-47b2ddfe7d6d)
 
-Clean:
+Clean/Worn/Ragged:
 ![image](https://github.com/Benjaneer/storyteller-addon-singlesheet/assets/9536408/6bd42d08-ac93-4454-ae5d-eef952392651)
-
-Worn:
 ![image](https://github.com/Benjaneer/storyteller-addon-singlesheet/assets/9536408/01ad000d-cc09-44ae-8d2e-8b27d3ad8955)
 
-Ragged:
+editor background:
 ![image](https://github.com/Benjaneer/storyteller-addon-singlesheet/assets/9536408/8c9f512f-043b-40ac-9102-fcbe1c899a5b)
 
 Pristine:
